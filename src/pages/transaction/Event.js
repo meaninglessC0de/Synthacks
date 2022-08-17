@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 import {useEffect,useState} from 'react'
 import { projectFirestore } from '../../firebase/config'
 import Calendar from 'react-calendar'
-
+import './Event.css'
 // styles
 
 export default function Recipe() {
@@ -40,7 +40,7 @@ export default function Recipe() {
 
 
   return (
-    <div >
+    <div>
       
       {date && <div className='calendar-container'>
         <Calendar value={date} />
@@ -49,8 +49,10 @@ export default function Recipe() {
       {isPending && <p className="loading">Loading...</p>}
       {event && (
         <>
-          <h2 className="page-title">{event.name}</h2>
-          <p> {event.description}</p>
+          <h2 className='header'>{event.name}</h2>
+          
+          
+         
 
           
         </>

@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 960px;
+    margin: 60px auto;
+  }
+
+  .login-form {
+    max-width: 360px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #FFF;
+  
+  }
+
+
+.thing{
+    background-color:#EFE;
+    width: 50%;
+    margin: auto;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+}

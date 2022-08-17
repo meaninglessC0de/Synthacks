@@ -7,7 +7,7 @@ import Login from './pages/login/Login'
 import Signup from './pages/signup/Signup'
 import Navbar from './components/Navbar'
 import Event from './pages/transaction/Event'
-
+import EmailMaker from './pages/email/EmailMaker'
 function App() {
   const { authIsReady, user } = useAuthContext()
 
@@ -28,6 +28,9 @@ function App() {
             <Route path='/about'>
 
             </Route>
+            <Route path='/emails'>
+              <EmailMaker></EmailMaker>
+            </Route>
             <Route path="/signup">
               {user && user.displayName && <Redirect to="/" />}
               {!user && <Signup />}
@@ -35,7 +38,9 @@ function App() {
             <Route path='/:id'>
               <Event></Event>
             </Route>
+            
           </Switch>
+
         </BrowserRouter>
       )}
     </div>

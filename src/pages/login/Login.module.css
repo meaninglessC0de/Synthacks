@@ -1,7 +1,10 @@
 .login-form {
   max-width: 360px;
   margin: 60px auto;
-  padding: 20px;
+  padding: 100px;
+  border-radius: 30px;
+  background-color: #EEF;
+
 }
 .login-form label {
   display: block;

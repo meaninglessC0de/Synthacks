@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 960px;
+    margin: 60px auto;
+  }
+.content {
+    padding-right: 30px;
+  }
+
+.header{
+    position: absolute 150px;
+}
